@@ -7,7 +7,11 @@
 //
 
 import Foundation
-
+class DGAdvertViewController: UIViewController {
+    override func viewDidLoad() {
+        
+    }
+}
 
 class DGAdvertView: UIImageView {
     //加required是因为这是指定初始化器,表示子类要继承这个方法
