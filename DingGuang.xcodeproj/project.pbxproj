@@ -16,6 +16,7 @@
 		A1022F901C50D81000A94D70 /* DingGuangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1022F8F1C50D81000A94D70 /* DingGuangTests.m */; };
 		A1022F9B1C50D81000A94D70 /* DingGuangUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1022F9A1C50D81000A94D70 /* DingGuangUITests.m */; };
 		A17728241C50DA0F005A233C /* DGAdvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17728231C50DA0F005A233C /* DGAdvert.swift */; };
+		A18209531C73096500611FCC /* DGFirst.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A18209521C73096500611FCC /* DGFirst.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		A1022F9C1C50D81000A94D70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A17728221C50DA0F005A233C /* DingGuang-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DingGuang-Bridging-Header.h"; sourceTree = "<group>"; };
 		A17728231C50DA0F005A233C /* DGAdvert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGAdvert.swift; sourceTree = "<group>"; };
+		A18209521C73096500611FCC /* DGFirst.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DGFirst.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		A1022F741C50D80F00A94D70 /* DingGuang */ = {
 			isa = PBXGroup;
 			children = (
+				A182094F1C73085F00611FCC /* 首页 */,
 				A182094D1C72B9A500611FCC /* 广告页 */,
 				A182094E1C72B9CC00611FCC /* 其他 */,
 				A1022F751C50D80F00A94D70 /* Supporting Files */,
@@ -178,6 +181,14 @@
 				A1022F791C50D80F00A94D70 /* AppDelegate.m */,
 			);
 			name = "其他";
+			sourceTree = "<group>";
+		};
+		A182094F1C73085F00611FCC /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				A18209521C73096500611FCC /* DGFirst.storyboard */,
+			);
+			name = "首页";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A18209531C73096500611FCC /* DGFirst.storyboard in Resources */,
 				A1022F851C50D80F00A94D70 /* LaunchScreen.storyboard in Resources */,
 				A1022F821C50D80F00A94D70 /* Assets.xcassets in Resources */,
 				A1022F801C50D80F00A94D70 /* Main.storyboard in Resources */,

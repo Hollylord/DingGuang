@@ -7,19 +7,23 @@
 //
 
 import Foundation
+var screenWidth = UIScreen.mainScreen().bounds.width
+var screenHeight = UIScreen.mainScreen().bounds.height
 
-
-class DGAdvertViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
+class DGAdvertViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,UIScrollViewDelegate {
     
     @IBOutlet weak var advertCollectionView: UICollectionView!
-    
+    var pages: Int = 3
+
+//MARK: - 生命周期
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.advertCollectionView.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: "advertCell")
         
-        
     }
+    
+    
     
 //MARK: - 代理
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -27,7 +31,7 @@ class DGAdvertViewController: UIViewController,UICollectionViewDataSource,UIColl
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6;
+        return pages;
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -36,13 +40,21 @@ class DGAdvertViewController: UIViewController,UICollectionViewDataSource,UIColl
         let imageView = UIImageView(image: UIImage(named: "advert1"))
         imageView.frame = cell.bounds
         cell.contentView.addSubview(imageView)
-//        cell.contentView.backgroundColor = UIColor.redColor()
-//        print(cell.contentView.subviews)
+
         return cell
     }
     
+    //手一放开才调用
+    func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        let currentOffset = scrollView.contentOffset
+        if currentOffset.x > CGFloat (pages - 1) * screenWidth {
+            
+            self.performSegueWithIdentifier("turn2firstVC", sender: self)
+       
+        }
+    }
     
-    
+
 //MARK: - 隐藏状态栏
     override func prefersStatusBarHidden() -> Bool {
         return true
@@ -57,8 +69,8 @@ class DGAdvertFlowLayout: UICollectionViewFlowLayout {
         super.init(coder: aDecoder)
         self.minimumLineSpacing = 0;
         //这列可以用UISCreen来替代
-       
-        self.itemSize = CGSizeMake(UIScreen.mainScreen().bounds.width,UIScreen.mainScreen().bounds.height)
+        self.itemSize = CGSizeMake(screenWidth,screenHeight)
+        //设置滚动方向
         self.scrollDirection = UICollectionViewScrollDirection.Horizontal
         
     }

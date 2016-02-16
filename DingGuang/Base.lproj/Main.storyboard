@@ -8,7 +8,7 @@
         <!--Advert View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="DGAdvertViewController" customModule="DingGuang" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="advertVC" id="BYZ-38-t0r" customClass="DGAdvertViewController" customModule="DingGuang" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -48,11 +48,20 @@
                     </view>
                     <connections>
                         <outlet property="advertCollectionView" destination="V4q-dk-OKP" id="aMm-ER-hnP"/>
+                        <segue destination="3MZ-IN-j4X" kind="show" identifier="turn2firstVC" id="RWQ-xb-rTO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1175" y="348"/>
+            <point key="canvasLocation" x="-1157" y="352"/>
+        </scene>
+        <!--DGFirst-->
+        <scene sceneID="GI3-wh-AwP">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="firstVC" storyboardName="DGFirst" id="3MZ-IN-j4X" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nzl-Bt-qt9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-691" y="352"/>
         </scene>
     </scenes>
 </document>
