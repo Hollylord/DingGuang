@@ -125,15 +125,9 @@
 		A1022F741C50D80F00A94D70 /* DingGuang */ = {
 			isa = PBXGroup;
 			children = (
-				A17728231C50DA0F005A233C /* DGAdvert.swift */,
-				A1022F7E1C50D80F00A94D70 /* Main.storyboard */,
-				A1022F811C50D80F00A94D70 /* Assets.xcassets */,
-				A1022F831C50D80F00A94D70 /* LaunchScreen.storyboard */,
-				A1022F861C50D80F00A94D70 /* Info.plist */,
+				A182094D1C72B9A500611FCC /* 广告页 */,
+				A182094E1C72B9CC00611FCC /* 其他 */,
 				A1022F751C50D80F00A94D70 /* Supporting Files */,
-				A17728221C50DA0F005A233C /* DingGuang-Bridging-Header.h */,
-				A1022F781C50D80F00A94D70 /* AppDelegate.h */,
-				A1022F791C50D80F00A94D70 /* AppDelegate.m */,
 			);
 			path = DingGuang;
 			sourceTree = "<group>";
@@ -141,6 +135,9 @@
 		A1022F751C50D80F00A94D70 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A1022F811C50D80F00A94D70 /* Assets.xcassets */,
+				A1022F831C50D80F00A94D70 /* LaunchScreen.storyboard */,
+				A1022F861C50D80F00A94D70 /* Info.plist */,
 				A1022F761C50D80F00A94D70 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -162,6 +159,25 @@
 				A1022F9C1C50D81000A94D70 /* Info.plist */,
 			);
 			path = DingGuangUITests;
+			sourceTree = "<group>";
+		};
+		A182094D1C72B9A500611FCC /* 广告页 */ = {
+			isa = PBXGroup;
+			children = (
+				A17728231C50DA0F005A233C /* DGAdvert.swift */,
+				A1022F7E1C50D80F00A94D70 /* Main.storyboard */,
+			);
+			name = "广告页";
+			sourceTree = "<group>";
+		};
+		A182094E1C72B9CC00611FCC /* 其他 */ = {
+			isa = PBXGroup;
+			children = (
+				A17728221C50DA0F005A233C /* DingGuang-Bridging-Header.h */,
+				A1022F781C50D80F00A94D70 /* AppDelegate.h */,
+				A1022F791C50D80F00A94D70 /* AppDelegate.m */,
+			);
+			name = "其他";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -9,7 +9,7 @@
 import Foundation
 
 
-class DGAdvertViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
+class DGAdvertViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var advertCollectionView: UICollectionView!
     
@@ -21,13 +21,13 @@ class DGAdvertViewController: UIViewController,UICollectionViewDataSource,UIColl
         
     }
     
-    //MARK: - 代理
+//MARK: - 代理
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1;
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5;
+        return 6;
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -37,16 +37,66 @@ class DGAdvertViewController: UIViewController,UICollectionViewDataSource,UIColl
         imageView.frame = cell.bounds
         cell.contentView.addSubview(imageView)
 //        cell.contentView.backgroundColor = UIColor.redColor()
-        print(cell.contentView.subviews)
+//        print(cell.contentView.subviews)
         return cell
     }
     
-    //MARK: - 设置状态栏
+    
+    
+//MARK: - 隐藏状态栏
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
 }
 
+//MARK: - 自定义CollectionView布局
+class DGAdvertFlowLayout: UICollectionViewFlowLayout {
+    var itemX :CGFloat = 0.0
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.minimumLineSpacing = 0;
+        //这列可以用UISCreen来替代
+       
+        self.itemSize = CGSizeMake(UIScreen.mainScreen().bounds.width,UIScreen.mainScreen().bounds.height)
+        self.scrollDirection = UICollectionViewScrollDirection.Horizontal
+        
+    }
+    
+    override func shouldInvalidateLayoutForBoundsChange(newBounds: CGRect) -> Bool {
+        return true
+    }
+    
+    
+    override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+        //这个rect不准，要用可视范围
+        let attributes = super.layoutAttributesForElementsInRect(rect)
+        
+        // 可视范围
+        let visibleRect = CGRectMake((self.collectionView?.contentOffset.x)!, (self.collectionView?.contentOffset.y)!, (self.collectionView?.bounds.size.width)!, (self.collectionView?.bounds.size.height)!)
+        let array = super.layoutAttributesForElementsInRect(visibleRect)
+        
+        let centerItem = array![0]
+        itemX = centerItem.frame.origin.x
+        
+        return attributes
+    }
+    
+    override func targetContentOffsetForProposedContentOffset(proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
+        //1. 手一松开，CollectionView的offset值
+        let currentOffset =  self.collectionView?.contentOffset
+
+        //往右滑
+        if proposedContentOffset.x < currentOffset?.x || currentOffset?.x < 0{
+            let finalPoint = CGPointMake(itemX, (currentOffset?.y)!)
+            return finalPoint
+        }
+        else {
+            let finalPoint = CGPointMake(itemX + (self.collectionView?.bounds.width)!, (currentOffset?.y)!)
+            return finalPoint
+        }
+    }
+}
 
 //class DGAdvertView: UIImageView {
 //    //加required是因为这是指定初始化器,表示子类要继承这个方法
