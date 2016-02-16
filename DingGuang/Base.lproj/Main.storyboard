@@ -5,10 +5,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Advert View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+<<<<<<< HEAD
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+=======
+                <viewController id="BYZ-38-t0r" customClass="DGAdvertViewController" customModule="DingGuang" customModuleProvider="target" sceneMemberID="viewController">
+>>>>>>> test
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,43 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="V4q-dk-OKP">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <collectionViewLayout key="collectionViewLayout" id="qHX-Yg-7Gv" customClass="DGAdvertFlowLayout" customModule="DingGuang"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" restorationIdentifier="advertCell" reuseIdentifier="advertCell" id="vPV-ll-Yd5">
+                                        <rect key="frame" x="113" y="0.0" width="375" height="500"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <size key="customSize" width="375" height="500"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="3W8-1Q-eo1"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="svs-LW-32f"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="V4q-dk-OKP" secondAttribute="bottom" id="4Bp-YP-fAi"/>
+                            <constraint firstItem="V4q-dk-OKP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="5bY-C0-P1y"/>
+                            <constraint firstItem="V4q-dk-OKP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="scC-La-5FK"/>
+                            <constraint firstAttribute="trailing" secondItem="V4q-dk-OKP" secondAttribute="trailing" id="ut1-aZ-uek"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="advertCollectionView" destination="V4q-dk-OKP" id="aMm-ER-hnP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1175" y="348"/>
         </scene>
     </scenes>
 </document>

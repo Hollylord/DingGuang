@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		576906BB7918260F346166FB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F0620CED1D56A51E77E8D7 /* libPods.a */; };
 		A1022F771C50D80F00A94D70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1022F761C50D80F00A94D70 /* main.m */; };
 		A1022F7A1C50D80F00A94D70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1022F791C50D80F00A94D70 /* AppDelegate.m */; };
-		A1022F7D1C50D80F00A94D70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1022F7C1C50D80F00A94D70 /* ViewController.m */; };
 		A1022F801C50D80F00A94D70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1022F7E1C50D80F00A94D70 /* Main.storyboard */; };
 		A1022F821C50D80F00A94D70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1022F811C50D80F00A94D70 /* Assets.xcassets */; };
 		A1022F851C50D80F00A94D70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1022F831C50D80F00A94D70 /* LaunchScreen.storyboard */; };
 		A1022F901C50D81000A94D70 /* DingGuangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1022F8F1C50D81000A94D70 /* DingGuangTests.m */; };
 		A1022F9B1C50D81000A94D70 /* DingGuangUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1022F9A1C50D81000A94D70 /* DingGuangUITests.m */; };
+		A17728241C50DA0F005A233C /* DGAdvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17728231C50DA0F005A233C /* DGAdvert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		078039DCC87980AC289EB4A9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		1F98D1B1232B5979A77A53CE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		44F0620CED1D56A51E77E8D7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1022F721C50D80F00A94D70 /* DingGuang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DingGuang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1022F761C50D80F00A94D70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A1022F781C50D80F00A94D70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A1022F791C50D80F00A94D70 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A1022F7B1C50D80F00A94D70 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A1022F7C1C50D80F00A94D70 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A1022F7F1C50D80F00A94D70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1022F811C50D80F00A94D70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1022F841C50D80F00A94D70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		A1022F961C50D81000A94D70 /* DingGuangUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DingGuangUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1022F9A1C50D81000A94D70 /* DingGuangUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DingGuangUITests.m; sourceTree = "<group>"; };
 		A1022F9C1C50D81000A94D70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A17728221C50DA0F005A233C /* DingGuang-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DingGuang-Bridging-Header.h"; sourceTree = "<group>"; };
+		A17728231C50DA0F005A233C /* DGAdvert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGAdvert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				576906BB7918260F346166FB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DD12B162839746D6C1DFBE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				078039DCC87980AC289EB4A9 /* Pods.debug.xcconfig */,
+				1F98D1B1232B5979A77A53CE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3FC2432BE467BE84FCE531C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44F0620CED1D56A51E77E8D7 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A1022F691C50D80F00A94D70 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				A1022F8E1C50D81000A94D70 /* DingGuangTests */,
 				A1022F991C50D81000A94D70 /* DingGuangUITests */,
 				A1022F731C50D80F00A94D70 /* Products */,
+				3DD12B162839746D6C1DFBE2 /* Pods */,
+				3FC2432BE467BE84FCE531C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +125,8 @@
 		A1022F741C50D80F00A94D70 /* DingGuang */ = {
 			isa = PBXGroup;
 			children = (
-				A1022F781C50D80F00A94D70 /* AppDelegate.h */,
-				A1022F791C50D80F00A94D70 /* AppDelegate.m */,
-				A1022F7B1C50D80F00A94D70 /* ViewController.h */,
-				A1022F7C1C50D80F00A94D70 /* ViewController.m */,
-				A1022F7E1C50D80F00A94D70 /* Main.storyboard */,
-				A1022F811C50D80F00A94D70 /* Assets.xcassets */,
-				A1022F831C50D80F00A94D70 /* LaunchScreen.storyboard */,
-				A1022F861C50D80F00A94D70 /* Info.plist */,
+				A182094D1C72B9A500611FCC /* 广告页 */,
+				A182094E1C72B9CC00611FCC /* 其他 */,
 				A1022F751C50D80F00A94D70 /* Supporting Files */,
 			);
 			path = DingGuang;
@@ -117,6 +135,9 @@
 		A1022F751C50D80F00A94D70 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A1022F811C50D80F00A94D70 /* Assets.xcassets */,
+				A1022F831C50D80F00A94D70 /* LaunchScreen.storyboard */,
+				A1022F861C50D80F00A94D70 /* Info.plist */,
 				A1022F761C50D80F00A94D70 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -140,6 +161,25 @@
 			path = DingGuangUITests;
 			sourceTree = "<group>";
 		};
+		A182094D1C72B9A500611FCC /* 广告页 */ = {
+			isa = PBXGroup;
+			children = (
+				A17728231C50DA0F005A233C /* DGAdvert.swift */,
+				A1022F7E1C50D80F00A94D70 /* Main.storyboard */,
+			);
+			name = "广告页";
+			sourceTree = "<group>";
+		};
+		A182094E1C72B9CC00611FCC /* 其他 */ = {
+			isa = PBXGroup;
+			children = (
+				A17728221C50DA0F005A233C /* DingGuang-Bridging-Header.h */,
+				A1022F781C50D80F00A94D70 /* AppDelegate.h */,
+				A1022F791C50D80F00A94D70 /* AppDelegate.m */,
+			);
+			name = "其他";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1022F9F1C50D81000A94D70 /* Build configuration list for PBXNativeTarget "DingGuang" */;
 			buildPhases = (
+				B21243FE954CE87F55327CDA /* Check Pods Manifest.lock */,
 				A1022F6E1C50D80F00A94D70 /* Sources */,
 				A1022F6F1C50D80F00A94D70 /* Frameworks */,
 				A1022F701C50D80F00A94D70 /* Resources */,
+				19DBEF94A144E25D9DED763A /* Embed Pods Frameworks */,
+				5B513B363D0C5AAFC1096E32 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,13 +308,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19DBEF94A144E25D9DED763A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B513B363D0C5AAFC1096E32 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B21243FE954CE87F55327CDA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A1022F6E1C50D80F00A94D70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1022F7D1C50D80F00A94D70 /* ViewController.m in Sources */,
 				A1022F7A1C50D80F00A94D70 /* AppDelegate.m in Sources */,
+				A17728241C50DA0F005A233C /* DGAdvert.swift in Sources */,
 				A1022F771C50D80F00A94D70 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,23 +502,32 @@
 		};
 		A1022FA01C50D81000A94D70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 078039DCC87980AC289EB4A9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = NO;
 				INFOPLIST_FILE = DingGuang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingguangjqr.DingGuang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DingGuang/DingGuang-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		A1022FA11C50D81000A94D70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F98D1B1232B5979A77A53CE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = NO;
 				INFOPLIST_FILE = DingGuang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dingguangjqr.DingGuang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DingGuang/DingGuang-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -498,6 +598,7 @@
 				A1022FA11C50D81000A94D70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1022FA21C50D81000A94D70 /* Build configuration list for PBXNativeTarget "DingGuangTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +607,7 @@
 				A1022FA41C50D81000A94D70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1022FA51C50D81000A94D70 /* Build configuration list for PBXNativeTarget "DingGuangUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +616,7 @@
 				A1022FA71C50D81000A94D70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
